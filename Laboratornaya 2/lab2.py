@@ -18,7 +18,7 @@ b = 5.7
 print(int(b))
 c = -5.7
 print(int(c))
-e = 3**39 - (int(float**39))
+e = 3**39 - int(float(3**39))
 print(int(e))
 
 ##Задание 5
@@ -29,28 +29,25 @@ print("Я очень рад, " + user_name + ":)")
 ##Задание6
 x = int(input())
 y = int(input())
-sum = x + y
+m = sum(x * 60 + y for m in range(2))
 print("Путь доктора общий", sum)
 
 ##Задание 7
 a = False
 b = True
 c = False
-print(not a or b and c)
+print (not a or b and c)
+print (not (a or b) and c) 
+
 
 ##Задание 8
-year = int(input('Введите год: '))
-if year % 4 ! = 0:
-print('Год високосный.')
- elif year % 100 == 0:
-     if year % 100 == 0:
-   print ('С Днём Рождения!')
-else:
-   print('Год не високосный.')
-if year < 1900:
-   print('Год не входит в выборку')
-   if year < 3000:
-   print('Год не входит в выборку')
+a = int(input('Год рождения: '))
+    if a < 1900 or a > 3000:  
+        print('Год не входит в выборку.')
+    elif a % 4 != 0 or a % 100 == 0:  
+        print('Обычный год :(')
+    else:
+        print('С днём рождения!:)')
 
 ##Задание 9
 number = 0
@@ -86,15 +83,15 @@ for i in range(0, 20, 2):
     b = int(input('Введите значение 2: '))
     c = int(input('Введите значение 3: '))
     d = int(input('Введите значение 4: '))
-   s = '' 
-   for i in range (c, d + 1):
-    s += '\n%s' % i
-   for i in range (a, b + 1):
-    s += '\n%s' % i
-    for j in range (c, d + 1):
-    s += '\t%s' % (i * j)
-    print(s)
-
+   print('', end='\t')  
+    for j in range(c, d + 1): 
+        print(j, end='\t')
+    print()  
+    for i in range(a, b + 1):  
+        print(i, end='\t')
+        for j in range(c, d + 1):
+            print(i * j, end='\t')  
+    print()
       #Задача 14
     n = int(input('Введите значение матрицы: '))
     a = [[0] * n for i in range(n)]
