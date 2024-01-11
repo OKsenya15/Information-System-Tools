@@ -44,7 +44,7 @@ print (not (a or b) and c)
 a = int(input('Год рождения: '))
     if a < 1900 or a > 3000:  
         print('Год не входит в выборку.')
-    elif a % 4 != 0 or a % 100 == 0:  
+    elif a % 4 != 0 or a % 100 == 0 and a % 400 != 0:  
         print('Обычный год :(')
     else:
         print('С днём рождения!:)')
@@ -91,6 +91,7 @@ for i in range(0, 20, 2):
         print(i, end='\t')
         for j in range(c, d + 1):
             print(i * j, end='\t')  
+        print('\t')
     print()
       #Задача 14
     n = int(input('Введите значение матрицы: '))
