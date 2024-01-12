@@ -1,21 +1,18 @@
 var indexSectionsWithContent =
 {
-  0: "m",
-  1: "m",
-  2: "m"
+  0: "$0123456789:abcdefghijklmnopqrstuvwxy",
+  1: "acdefghilmopqstux"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "namespaces",
-  2: "functions"
+  1: "pages"
 };
 
 var indexSectionLabels =
 {
   0: "All",
-  1: "Namespaces",
-  2: "Functions"
+  1: "Pages"
 };
 
